@@ -10,16 +10,17 @@ struct SingInView: View {
         ZStack{
             
             Image("bottom_bg")
-                .resizable() 
+                .resizable()
                 .scaledToFill()
                 .frame(width: .screenWidth, height: .screenWidth)
+                
             
             VStack{
                 Image("sign_in_top")
                     .resizable()
                     .scaledToFill()
                     .frame(width: .screenWidth, height: .screenWidth)
-                Spacer()
+                    .padding(.bottom,500)
             }
             
             ScrollView{
